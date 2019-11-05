@@ -82,7 +82,6 @@ header .right-header ul li a {
 }
 
 header .right-header p.rotate {
-    padding-top: 10vw;
     opacity: 0.4;
     font-size: 60px;
     letter-spacing: 10px;
@@ -292,11 +291,14 @@ header .right-header i {
     }
 }
 
-@media(max-width:800px) and (orientation: portrait) {
+@media(max-width:414px) and (orientation: portrait) {
     header .left-header h1 {
         padding-top: 1%;
         padding-bottom: 2%;
-        font-size: 36px;
+        font-size: 30px;
+
+
+
     }
 
     header .left-header h2 {
@@ -310,8 +312,8 @@ header .right-header i {
     }
 
     header .foto {
-        top: 3%;
-        left: 32%;
+        top: 50%;
+        left: 50%;
         height: 140px;
         width: 140px;
         background-position: center;
@@ -337,17 +339,17 @@ header .right-header i {
         font-size: 16px;
     }
 
-
-    header .right-header div.link {
-        font-size: 12px;
-    }
-
     header .right-header div.links {
         grid-template-columns: repeat(4, 25px);
+        padding-top: 30px;
+        margin-bottom: -10px;
 
     }
 
-    header .right-header div.links {
+    header .right-header div.link {
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
         font-size: 12px;
     }
 }
