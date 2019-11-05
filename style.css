@@ -120,6 +120,239 @@ header .right-header i {
 
 }
 
+@media(max-width:1600px) {
+
+    header .right-header p.rotate {
+        padding-top: 5vw;
+
+    }
+}
+
+@media(max-width:1280px) {
+    header .right-header ul {
+        grid-template-columns: repeat(2, 10vw);
+        grid-template-rows: repeat(2, 4vw);
+        padding-left: 40%;
+        padding-top: 5%;
+    }
+
+    header .right-header div.links {
+        grid-template-columns: repeat(4, 80px)
+    }
+}
+
+@media(max-width:1024px) and (orientation:landscape) {
+    header .foto {
+        left: 50%;
+    }
+
+    header .right-header ul {
+        grid-template-columns: repeat(2, 13vw);
+        padding-left: 30%;
+    }
+
+    header .right-header div.links {
+        grid-template-columns: repeat(4, 70px)
+    }
+
+    header .right-header div.link {
+        right: 20px;
+        bottom: 30px;
+    }
+}
+
+@media(max-width:812px)and (orientation:landscape) {
+    header {
+        min-height: 100vh;
+        grid-template-columns: 3fr 5fr;
+
+    }
+
+    header .left-header h1 {
+        padding-top: 2%;
+        padding-bottom: 5%;
+        font-size: 32px;
+    }
+
+    header .left-header h2 {
+        font-size: 27px;
+        padding-bottom: 1%;
+    }
+
+    header .left-header p {
+        font-size: 18px;
+    }
+
+    header .foto {
+        top: 8%;
+        left: 42%;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-position: center;
+    }
+
+    header .right-header ul {
+        padding-left: 55%;
+        padding-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 8vw);
+    }
+
+    header .right-header ul li a {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    header .right-header p.rotate {
+        opacity: 0;
+    }
+
+    header .right-header div.links {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+
+    }
+
+}
+
+@media(max-width:700px) and (orientation:landscape) {
+    header .left-header h1 {
+        padding-top: 1%;
+        padding-bottom: 2%;
+        font-size: 24px;
+    }
+
+    header .left-header h2 {
+        font-size: 23px;
+        padding-bottom: 1%;
+    }
+
+    header .left-header p {
+        font-size: 16px;
+    }
+
+    header .foto {
+        top: 8%;
+        left: 32%;
+
+    }
+}
+
+@media(max-width:500px) and (orientation:landscape) {
+    header .foto {
+        top: 8%;
+        left: 28%;
+
+    }
+
+    header .right-header div.links {
+        grid-template-columns: repeat(4, 45px);
+
+    }
+}
+
+@media(max-width:800px) and (orientation: portrait) {
+    header {
+        min-height: 0.6vh;
+    }
+
+    header .left-header h1 {
+        padding-top: 1%;
+        padding-bottom: 2%;
+        font-size: 44px;
+    }
+
+    header .left-header h2 {
+        font-size: 43px;
+        padding-bottom: 1%;
+    }
+
+    header .left-header p {
+        font-size: 36px;
+    }
+
+    header .foto {
+        top: 8%;
+        left: 35%;
+
+    }
+
+    header .right-header ul {
+        padding-left: 40%;
+        padding-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 10vw);
+
+    }
+
+    header .right-header div.links {
+        grid-template-columns: repeat(4, 45px);
+
+    }
+}
+
+@media(max-width:800px) and (orientation: portrait) {
+    header .left-header h1 {
+        padding-top: 1%;
+        padding-bottom: 2%;
+        font-size: 36px;
+    }
+
+    header .left-header h2 {
+        font-size: 30px;
+        padding-bottom: 1%;
+
+    }
+
+    header .left-header p {
+        font-size: 22px;
+    }
+
+    header .foto {
+        top: 3%;
+        left: 32%;
+        height: 140px;
+        width: 140px;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    header .right-header p.rotate {
+        opacity: 0;
+    }
+
+    header .right-header ul {
+        padding-left: 30%;
+        padding-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 15vw);
+
+
+    }
+
+    header .right-header ul li a {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+header .right-header div.link {
+    font-size: 12px;
+}
+
+header .right-header div.links {
+    grid-template-columns: repeat(4, 25px);
+
+}
+
+header .right-header div.links {
+    font-size: 12px;
+}
+}
+
+
 /* body */
 body {
     background-color: #F5F6F7;
@@ -215,7 +448,7 @@ body div.about div.my-data span {
     color: royalblue;
 }
 
-body div.about > p {
+body div.about>p {
     grid-column-start: 2;
     padding: 30px 40px 15px 10px;
     line-height: 1.5;
@@ -224,7 +457,7 @@ body div.about > p {
 }
 
 /* body skills section*/
-body .skills > h2 {
+body .skills>h2 {
     color: black;
     text-align: center;
     font-size: 40px;
@@ -321,7 +554,7 @@ body .portfolio .cont {
     grid-gap: 2vw;
 }
 
-body .cont > div {
+body .cont>div {
     background-color: white;
 }
 
@@ -409,7 +642,7 @@ footer .contact {
 
 }
 
-footer .contact > p {
+footer .contact>p {
     padding-top: 50px;
     padding-bottom: 20px;
 }
