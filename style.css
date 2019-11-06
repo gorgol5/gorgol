@@ -718,8 +718,6 @@ body .portfolio .text {
 @media (max-width: 1600px) {
 
     body .portfolio .cont {
-
-        /* padding-left: 20%; */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
     }
@@ -774,10 +772,7 @@ footer .half-a-border-on-top {
 }
 
 .half-a-border-on-top:after {
-    padding: 0;
-    margin: 0;
     display: block;
-    /* probably not really needed? */
     content: "";
     width: 50%;
     height: 1.1px;
@@ -837,3 +832,59 @@ form input.submit {
 h1 {
     text-align: center;
 }
+
+@media (max-width:1600px) {
+    footer {
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    footer .contact {
+        min-width: 20vw;
+    }
+
+    form input {
+        width: 50%;
+    }
+
+    footer textarea {
+        width: 70%;
+    }
+}
+
+@media (max-width:640px) {
+
+    .wrapper {
+        padding: 0;
+    }
+
+    footer section.formular {
+        padding-left: 50px;
+
+    }
+
+    footer .formular form {
+        font-size: 18px;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    form input.submit {
+        font-size: 20px;
+    }
+
+    footer textarea {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:414px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
