@@ -494,6 +494,37 @@ body div.about>p {
     text-align: justify;
 }
 
+@media (max-width:800px) {
+    body .about-me h2 {
+        font-size: 30px;
+    }
+
+    body div.about div.my-data {
+        font-size: 20px;
+    }
+
+    body div.about>p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:540px) {
+    body .about-me h2 {
+        font-size: 25px;
+    }
+
+    body div.about div.my-data {
+        font-size: 16px;
+        padding: 40px 0 0 10px;
+
+    }
+
+    body div.about>p {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+}
+
 /* body skills section*/
 body .skills>h2 {
     color: black;
