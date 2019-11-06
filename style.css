@@ -290,7 +290,7 @@ header .right-header i {
     }
 }
 
-@media (max-width:414px) and (orientation: portrait) {
+@media (max-width:500px) and (orientation: portrait) {
     header .left-header h1 {
         padding-top: 1%;
         padding-bottom: 2%;
