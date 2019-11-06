@@ -119,15 +119,15 @@ header .right-header i {
 
 }
 
-@media(max-width:1600px) {
+/* rwd */
+@media (max-width:1600px) {
 
     header .right-header p.rotate {
         padding-top: 5vw;
-
     }
 }
 
-@media(max-width:1280px) {
+@media (max-width:1280px) {
     header .right-header ul {
         grid-template-columns: repeat(2, 10vw);
         grid-template-rows: repeat(2, 4vw);
@@ -140,7 +140,7 @@ header .right-header i {
     }
 }
 
-@media(max-width:1024px) and (orientation:landscape) {
+@media (max-width:1024px) and (orientation:landscape) {
     header .foto {
         left: 50%;
     }
@@ -160,7 +160,7 @@ header .right-header i {
     }
 }
 
-@media(max-width:812px)and (orientation:landscape) {
+@media (max-width:812px)and (orientation:landscape) {
     header {
         min-height: 100vh;
         grid-template-columns: 3fr 5fr;
@@ -215,7 +215,7 @@ header .right-header i {
 
 }
 
-@media(max-width:700px) and (orientation:landscape) {
+@media (max-width:700px) and (orientation:landscape) {
     header .left-header h1 {
         padding-top: 1%;
         padding-bottom: 2%;
@@ -234,24 +234,21 @@ header .right-header i {
     header .foto {
         top: 8%;
         left: 32%;
-
     }
 }
 
-@media(max-width:500px) and (orientation:landscape) {
+@media (max-width:500px) and (orientation:landscape) {
     header .foto {
         top: 8%;
         left: 28%;
-
     }
 
     header .right-header div.links {
         grid-template-columns: repeat(4, 45px);
-
     }
 }
 
-@media(max-width:800px) and (orientation: portrait) {
+@media (max-width:800px) and (orientation: portrait) {
     header {
         min-height: 0.6vh;
     }
@@ -274,7 +271,6 @@ header .right-header i {
     header .foto {
         top: 8%;
         left: 35%;
-
     }
 
     header .right-header ul {
@@ -282,7 +278,6 @@ header .right-header i {
         padding-top: 5%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 10vw);
-
     }
 
     header .right-header div.links {
@@ -291,20 +286,16 @@ header .right-header i {
     }
 }
 
-@media(max-width:414px) and (orientation: portrait) {
+@media (max-width:414px) and (orientation: portrait) {
     header .left-header h1 {
         padding-top: 1%;
         padding-bottom: 2%;
         font-size: 30px;
-
-
-
     }
 
     header .left-header h2 {
         font-size: 30px;
         padding-bottom: 1%;
-
     }
 
     header .left-header p {
@@ -318,7 +309,6 @@ header .right-header i {
         width: 140px;
         background-position: center;
         background-size: cover;
-
     }
 
     header .right-header p.rotate {
@@ -411,6 +401,53 @@ body .first-section button.check-cv {
 body .first-section button.check-cv:hover {
     color: white;
     background-color: rgba(255, 187, 0, 0.685);
+}
+
+@media (max-width:1024px) and (orientation:landscape) {
+    body .first-section h2 {
+        font-size: 32px;
+    }
+
+    body .first-section button {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width:1024px) {
+    body .first-section button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:800px) {
+
+    body .first-section h2 {
+        font-size: 20px;
+    }
+
+    body .first-section .buttons {
+        grid-template-columns: 1fr 5fr 5fr 1fr;
+    }
+
+    body .first-section button {
+        border-radius: 40px/35px;
+        width: 15vw;
+        height: 10vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:414px) {
+    body .first-section button {
+        font-size: 18px;
+    }
+
+    body .first-section button {
+        width: 25vw;
+        height: 20vw;
+        font-size: 12px;
+    }
 }
 
 /* second body section */
