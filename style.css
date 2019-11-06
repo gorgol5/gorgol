@@ -715,6 +715,31 @@ body .portfolio .text {
     padding: 16px 32px;
 }
 
+@media (max-width: 1600px) {
+
+    body .portfolio .cont {
+
+        /* padding-left: 20%; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    body .portfolio h3 {
+        font-size: 16px;
+    }
+
+    body .portfolio a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    body .portfolio p {
+        font-size: 10px;
+    }
+}
+
 /*footer*/
 .wrapper {
     padding: 2vw 0 2vw 0;
