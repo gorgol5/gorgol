@@ -1,0 +1,104 @@
+/* body skills section*/
+body .skills>h2 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 1vw;
+    text-indent: 1%;
+
+}
+
+
+body .skill-set {
+    background-color: white;
+    margin: 0 auto 0;
+    padding-left: 10vw;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+body .skills .skill-set h3 {
+    text-indent: -30%;
+}
+
+body .skills .container {
+    width: 75%;
+    background-color: #ddd;
+    border-radius: 25px;
+}
+
+body .skills {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-indent: -30%;
+}
+
+body .html,
+body .css,
+body .js,
+body .teamwork,
+body .comm,
+body .adapt {
+    background-color: royalblue;
+    text-align: right;
+    border-radius: 25px;
+}
+
+body .html {
+    width: 90%;
+}
+
+body .css {
+    width: 80%;
+
+}
+
+body .js {
+    width: 50%;
+
+}
+
+body .teamwork {
+    width: 70%;
+
+}
+
+body .comm {
+    width: 70%;
+}
+
+body .adapt {
+    width: 85%;
+}
+
+@media (max-width:800px) {
+    body .skills>h2 {
+        font-size: 30px;
+    }
+
+    body .skills {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:414px) {
+    body .skills>h2 {
+        text-indent: -10%;
+
+    }
+
+    body .skill-set {
+        padding-left: 3vw;
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+
+    body .skills .container {
+        width: 75%;
+    }
+}

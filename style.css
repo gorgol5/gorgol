@@ -603,6 +603,33 @@ body .adapt {
     width: 85%;
 }
 
+@media (max-width:800px) {
+    body .skills>h2 {
+        font-size: 30px;
+    }
+
+    body .skills {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:414px) {
+    body .skills>h2 {
+        text-indent: -10%;
+
+    }
+
+    body .skill-set {
+        padding-left: 3vw;
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+
+    body .skills .container {
+        width: 75%;
+    }
+}
+
 /* body portfolio*/
 body .portfolio {
     margin-top: 2vw;
