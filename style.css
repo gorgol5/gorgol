@@ -637,6 +637,7 @@ body .adapt {
 /* body portfolio*/
 body .portfolio {
     margin-top: 2vw;
+
 }
 
 body .portfolio h2 {
@@ -648,7 +649,7 @@ body .portfolio .cont {
     width: 90vw;
     min-height: 30vw;
     display: grid;
-    grid-template-columns: repeat(3, 485px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     margin: 2vw auto 5vw;
     grid-gap: 2vw;
